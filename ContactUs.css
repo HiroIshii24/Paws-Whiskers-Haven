@@ -1,0 +1,200 @@
+
+
+.introduction-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato, arial;
+}
+
+.campaigns{
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(100, 34, 3);
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.introduction{
+    display: flex;
+    width: 100%;
+    height: 350px;
+}
+
+.introduction img{
+    width: 100%;
+    height: 350px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+input::placeholder{
+    font-style: italic;
+    font-size: 18px;
+}
+
+label{
+    font-size: 18px;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.location{
+    display: flex;
+}
+
+.phone-number{
+    display: flex;
+}
+
+.email-address{
+    display: flex;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.logos img{
+    width: 70px;
+    height: 70px;
+}
+
+.left-section div{
+    margin-left: 50px;
+    margin-bottom: 40px;
+    line-height: 12px;
+}
+
+.left-section span{
+    font-size: 30px;
+}
+
+.left-section p{
+    font-size: 18px;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 65px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.input-box input{
+    height: 35px;
+    width: 80%;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.input-box label{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(70, 68, 68);
+}
+
+.additional-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    width: 100px;
+    height: fit-content;
+}
+
+.additional-info input{
+    width: 230px;
+}
+
+.additional-info .input-box{
+    width: fit-content;
+    height: fit-content;
+}
+
+.additional-info .input-box:first-child{
+    width: 300px;
+}
+
+.textarea-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(70, 68, 68);
+}
+
+textarea{
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    width: 74%;
+    height: 150px;
+}
+
+textarea:focus{
+    text-align: start;
+}
+
+textarea:active{
+    text-align: start;
+}
+
+input, select, textarea:focus{
+    outline: none;
+}
+
+button{
+    width: 75%;
+    height: 40px;
+    margin-right: 90px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #683C13;
+    color: white;
+    border: none;
+}
+
+button:hover{
+    background-color: #55300d;
+}
+
+button:active{
+    opacity: 0.9;
+}
+
+footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(120deg, rgb(248, 220, 62), rgb(255, 243, 72), rgb(248, 239, 108));
+    margin-top: 100px;
+    width: 96.3%;
+    height: 90px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+
+footer img{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}

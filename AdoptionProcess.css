@@ -1,0 +1,372 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Lato,sans-serif;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(120deg, rgb(248, 239, 108), rgb(255, 243, 72), rgb(248, 220, 62));
+    justify-content: space-between;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+
+}
+
+.logo{
+    display: flex;
+    width: 400px;
+}
+
+.logo img{
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 75px;
+    width: 255px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.navigation ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    right: 30px;  
+}
+
+.navigation ul li {
+    position: relative;
+    padding: 5px 40px;
+    margin-right: 20px;
+    border-radius: 80px;
+    transition: all 0.1s ease;
+   
+ 
+    
+}
+.navigation ul li:last-child {
+    margin-right: 0;
+}   
+
+.navigation ul li a {
+    color: rgb(59, 20, 2);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: all 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.navigation ul li:hover{
+    background-color:rgb(59, 20, 2) ;
+}
+.navigation ul li:hover a{
+    color: white;
+}
+.navigation ul li .dropdown {
+    display: none; 
+    left: 11px;
+    background-color: rgb(250, 249, 246);
+    border-radius: 10px;
+    min-width: 150px; 
+    margin-top: 5px;
+    padding: 5px 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 10s;
+}
+
+.navigation ul li .dropdown li {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.navigation ul li .dropdown li a {
+    color: rgb(59, 20, 2);
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: helvetica;
+    font-weight: bolder;
+}
+
+.navigation ul li .dropdown li:hover {
+    background-color: rgb(59, 20, 2);
+}
+.navigation ul li .dropdown li:hover a {
+    color: white;
+}
+
+/* Show dropdown on hover */
+.header ul li:hover .dropdown {
+    display: block;
+}
+
+
+body{
+    margin: 0;
+}
+
+.introduction-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: Lato, arial;
+    padding-left: 20px;
+}
+
+.introduction-container span{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.adoption{
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(100, 34, 3);
+    margin-top: 35px;
+    margin-bottom: 50px;
+    padding-left: 15px;
+}
+
+.introduction{
+    text-align: start;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    width: 80%;
+}
+
+.main-content{
+    text-align: start;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    width: 90%;
+    padding-left: 35px;
+}
+
+.main-content span{
+    font-weight: bold;
+}
+
+.span-WhatToBring{
+    color: rgb(243, 74, 7);
+    font-size: 30px;
+    font-weight: bold;
+}
+.aditional-content-container{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+}
+
+.aditional-content{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.aditional-content p{
+    padding-left: 35px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.aditional-content ul{
+    margin-left: 35px;
+    line-height: 30px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    border: 2px solid rgb(165, 160, 160);
+    margin-top: 70px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.note{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: rgb(53, 51, 51)
+}
+
+.input-NameofAnimal{
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.forms input::placeholder{
+    font-style: italic;
+}
+
+.forms input:focus{
+    outline: none;
+}
+
+.NameofAnimal{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: rgb(53, 51, 51);
+}
+
+.person-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.person-info input{
+    height: 30px;
+    width: 520px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.person-info .input-box{
+    height: 30px;
+}
+
+.address-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 10px;
+    width: 90%;
+    height: 35px;
+    margin-left: 50px;
+
+}
+
+.address-info input{
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.input-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.address-info select{
+    height: 37px;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+
+}
+
+.zipcode{
+    height: 30px;
+    width: 100%;
+}
+
+.address{
+    height: 30px;
+    width: 700px;
+}
+
+.background-stats{
+    display: flex;
+    justify-content: space-between;
+    width: 59.5%;
+    margin-left: 50px;
+    margin-right: 72px;
+    margin-top: 9px;
+    
+
+}
+
+.background-stats input{
+    height: 30px;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-left: 10px;
+    
+}
+
+.background-stats select{
+    height: 37px;
+    width: 200px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.background-stats .input-box{
+    width: fit-content;
+    height: fit-content;
+}
+
+select:focus{
+    outline: none;
+}
+
+button{
+    margin: 50px 0px 0px 430px;
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #683C13;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    background-color: #55300d;
+}
+
+button:active{
+    opacity: 0.9;
+}
+
+footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(120deg, rgb(248, 220, 62), rgb(255, 243, 72), rgb(248, 239, 108));
+    margin-top: 100px;
+    width: 96.3%;
+    height: 90px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+
+footer img{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,
+    900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="AdoptionProcess.css">
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <title>Paws & Whiskers Haven</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li> <a href="index.html">ABOUT US</a></li>
+                <li> <a href="#">SERVICES</a>
+                     <ul class="dropdown">
+                        <li><a href="Adoption.html">Adopt</a></li>
+                        <li><a href="Donate.html">Donate</a></li>
+                        <li><a href="TipsAndGuidelines.html">Tips and Guidelines</a></li>
+                      </ul>
+                </li>
+                <li> <a href="Campaigns.html">CAMPAIGNS</a></li>
+                <li> <a href="ContactUs.html">CONTACT US</a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div class="introduction-container">
+        <div class="adoption">Adoption Process</div>
+        <div class="introduction">
+            <span>We are excited that you're considering adopting</span>
+            <p>Thousands of animals come through the Paws & Whiskers Haven's doors every year, 
+                but no matter how they got here or where they came from, they're provided with shelter, 
+                nourishing food, individualized medical treatment, behavioral rehabilitation when necessary, and most important: love.</p>
+        </div>
+        </div>
+
+    <div class="main-content">
+        <span class="span-WhatToBring">What to Bring</span>
+        
+        <p><span>1. Any valid ID and proof of address </span>(such as a utility bill or bank statement). 
+            You must be 18 years or older and sign an adoption contract. 
+        </p>
+
+        <p><span>2. Children and dogs that live in your household (if applicable)</span>. 
+            If you would like your child to meet an adoptable pet 
+            or your dog to be introduced to an adoptable dog before adopting, please bring them with you. 
+            We recommend dogs meet any resident dogs before adoption. All adults living in the home must 
+            also know about the pet and agree that it can live there.
+        </p>
+
+        <p><span>3. Leash (dogs) or carrier (cats and small pets)</span>. 
+            Required when taking a pet home for safety reasons. If you don't have these items, 
+            you can purchase from our Animal House pet supply shop at PWH Main.</p>
+        
+        <p>The PWH may require other information or require other steps be taken prior to adoption to ensure a pet is 
+            the right match for your family. The PWH only adopts animals as family pets, not for consumption or research. 
+            The PWH reserves the right to deny any adoption for any reason.</p>
+    </div>
+    <div class="aditional-content-container">
+        <div class="aditional-content">
+            <p>Adoption Includes</p>
+            <ul>
+                <li>A general physical exam by our medical staff, age-appropriate vaccinations, deworming, 
+                    fecal testing, heartworm testing, and collar.</li>
+                <li>Free behavior and training advice.</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="forms">
+        <div class="note">Submit you information to process your adoption.</div>
+        <form id="form">
+            <div><label class="NameofAnimal">Dog/Cat Name:</label>
+            <input class="input-NameofAnimal" type="text" id="animal" name="animal" placeholder="Name"></div>
+
+            <div class="person-info">
+                <div class="input-box">
+                    <input id="FirstName" name="FirstName" type="text" placeholder="First Name" required>
+                </div>
+                <div class="input-box">
+                    <input id="LastName" name="LastName" type="text" placeholder="Last Name" required>
+                </div>
+                <div class="input-box">
+                    <input id="email" name="email" type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input id="contact" name="contact" type="tel" placeholder="Contact Number" required>
+                </div>
+            </div>
+
+            <div class="address-info">
+                <div class="input-box">
+                    <input id="address" name="address" class="address" type="text" placeholder="Street/Address" required>
+                    
+                </div>
+                <div class="input-box">
+                    <select id="municipality" name="municipality" required>
+                        <option value="" disabled selected>Municipality</option>
+                        <option value="Anao">Anao</option>
+                        <option value="Bamban">Bamban</option>
+                        <option value="Camiling">Camiling</option>
+                        <option value="Capas">Capas</option>
+                        <option value="Gerona">Gerona</option>
+                        <option value="La Paz">La Paz</option>
+                        <option value="Mayantoc">Mayantoc</option>
+                        <option value="Moncada">Moncada</option>
+                        <option value="Paniqui">Paniqui</option>
+                        <option value="Pura">Pura</option>
+                        <option value="Ramos">Ramos</option>
+                        <option value="San Clemente">San Clemente</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="San Manuel">San Manuel</option>
+                        <option value="Sanata Ignacia">Santa Ignacia</option>
+                        <option value="Tarlac City">Tarlac City</option>
+                        <option value="Victoria">Victoria</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input id="zipcode" name="zipcode" class="zipcode" type="text" placeholder="Zip Code" required>
+                </div>
+            </div>
+
+            <div class="background-stats">
+                <div class="input-box">
+                    <select id="status" name="status" required>
+                        <option disabled selected>Status</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <input id="children" name="children" type="number" placeholder="No. of Children" required>
+                </div>
+
+                <div class="input-box">
+                    <input id="pets" name="pets" type="number" placeholder="No. of Pets" required>
+                </div>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+
+        
+    </div>
+
+    <footer>
+        <div class="footer-text">
+                 © 2024 Paws & Whiskers Haven. All rights reserved.
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61568752893180" target="_blank">
+                <img src="images/icons8-facebook-50 (1).png">
+            </a>
+        </div>
+        <div>
+            <img src="images/icons8-instagram-50.png">
+        </div>
+        <div>
+            <img src="images/icons8-twitter-50 (1).png">
+        </div>
+    </footer>    
+    
+        <script src="adoption.js"></script>
+</body>
+</html>
