@@ -136,3 +136,62 @@ body{
     font-size: 30px;
     margin-left: 15%;
 }
+
+@media (max-width: 320px){
+    .header{
+    display: flex;
+    position: relative;
+    width: 790px;
+    height: 75px;
+    background: linear-gradient(120deg, rgb(248, 239, 108), rgb(255, 243, 72), rgb(248, 220, 62));
+    justify-content: space-between;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 10;
+
+}
+
+.logo{
+    display: flex;
+    width: 100px;
+    margin-left: 230px;
+}
+
+.logo img{
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 75px;
+    width: 255px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.title-section{
+    background-image: url(images/download\ \(6\).jpg);
+    margin-top: 75px;
+    width: 790px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: top;
+}
+
+.title{
+    font-family: Alex Brush, cursive;
+    font-size: 27px; 
+    color: rgb(148, 103, 5);
+    font-weight: 700;
+    margin-left: 31%;
+}
+
+.motto{
+    font-family: "Lato", sans-serif;
+    margin-left: 40px; 
+    color: rgb(168, 117, 6);
+    font-size: 16px;
+    margin-left: 34%;
+}
+}
+
+
